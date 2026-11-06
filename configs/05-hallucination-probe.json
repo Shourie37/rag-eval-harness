@@ -1,0 +1,7 @@
+{
+  "name": "05-hallucination-probe",
+  "description": "Baseline retrieval with a mock that corrupts about 30% of answers. Checks that the grounding metric catches them.",
+  "chunking": {"size": 120, "overlap": 30},
+  "retrieval": {"mode": "bm25", "k": 4},
+  "generator": {"type": "mock-hallucinating", "rate": 0.3}
+}

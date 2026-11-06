@@ -1,0 +1,7 @@
+{
+  "name": "01-baseline",
+  "description": "BM25 over 120-word chunks, top 4.",
+  "chunking": {"size": 120, "overlap": 30},
+  "retrieval": {"mode": "bm25", "k": 4},
+  "generator": {"type": "mock"}
+}

@@ -1,0 +1,429 @@
+[
+  {
+    "id": "q01",
+    "question": "What does Acme charge for a successful domestic card charge?",
+    "answerable": true,
+    "expected_facts": [
+      "2.9%",
+      "30 cents"
+    ],
+    "gold_doc_ids": [
+      "pricing-standard"
+    ]
+  },
+  {
+    "id": "q02",
+    "question": "How much extra do international cards cost?",
+    "answerable": true,
+    "expected_facts": [
+      "1.5%"
+    ],
+    "gold_doc_ids": [
+      "pricing-standard"
+    ]
+  },
+  {
+    "id": "q03",
+    "question": "What fee does Acme add when a charge needs currency conversion?",
+    "answerable": true,
+    "expected_facts": [
+      "1%"
+    ],
+    "gold_doc_ids": [
+      "pricing-standard",
+      "faq-currencies"
+    ]
+  },
+  {
+    "id": "q04",
+    "question": "What is the ACH debit fee and its cap?",
+    "answerable": true,
+    "expected_facts": [
+      "0.8%",
+      "$5"
+    ],
+    "gold_doc_ids": [
+      "pricing-ach"
+    ]
+  },
+  {
+    "id": "q05",
+    "question": "At what monthly volume can a business ask for custom pricing?",
+    "answerable": true,
+    "expected_facts": [
+      "$250,000"
+    ],
+    "gold_doc_ids": [
+      "pricing-volume"
+    ]
+  },
+  {
+    "id": "q06",
+    "question": "How much does the Growth plan cost per month?",
+    "answerable": true,
+    "expected_facts": [
+      "$49"
+    ],
+    "gold_doc_ids": [
+      "pricing-plans"
+    ]
+  },
+  {
+    "id": "q07",
+    "question": "What uptime SLA comes with the Enterprise plan?",
+    "answerable": true,
+    "expected_facts": [
+      "99.99%"
+    ],
+    "gold_doc_ids": [
+      "pricing-plans"
+    ]
+  },
+  {
+    "id": "q08",
+    "question": "How long after a payment can I refund a charge?",
+    "answerable": true,
+    "expected_facts": [
+      "180 days"
+    ],
+    "gold_doc_ids": [
+      "refunds-policy"
+    ]
+  },
+  {
+    "id": "q09",
+    "question": "Does Acme give back the processing fee when I refund a charge?",
+    "answerable": true,
+    "expected_facts": [
+      "does not return"
+    ],
+    "gold_doc_ids": [
+      "refunds-policy"
+    ]
+  },
+  {
+    "id": "q10",
+    "question": "How long do card refunds take to appear on the customer statement?",
+    "answerable": true,
+    "expected_facts": [
+      "5 to 10 business days"
+    ],
+    "gold_doc_ids": [
+      "refunds-policy"
+    ]
+  },
+  {
+    "id": "q11",
+    "question": "Which API endpoint do I call to create a partial refund?",
+    "answerable": true,
+    "expected_facts": [
+      "POST",
+      "/v1/refunds"
+    ],
+    "gold_doc_ids": [
+      "refunds-partial"
+    ]
+  },
+  {
+    "id": "q12",
+    "question": "How much is the dispute fee?",
+    "answerable": true,
+    "expected_facts": [
+      "$15"
+    ],
+    "gold_doc_ids": [
+      "disputes"
+    ]
+  },
+  {
+    "id": "q13",
+    "question": "How many days do I have to submit evidence for a dispute?",
+    "answerable": true,
+    "expected_facts": [
+      "9 days"
+    ],
+    "gold_doc_ids": [
+      "disputes"
+    ]
+  },
+  {
+    "id": "q14",
+    "question": "When do standard payouts arrive?",
+    "answerable": true,
+    "expected_facts": [
+      "2 business days"
+    ],
+    "gold_doc_ids": [
+      "payouts-schedule"
+    ]
+  },
+  {
+    "id": "q15",
+    "question": "When does my first payout arrive?",
+    "answerable": true,
+    "expected_facts": [
+      "7 days"
+    ],
+    "gold_doc_ids": [
+      "payouts-schedule"
+    ]
+  },
+  {
+    "id": "q16",
+    "question": "What do instant payouts cost?",
+    "answerable": true,
+    "expected_facts": [
+      "1%",
+      "$0.50"
+    ],
+    "gold_doc_ids": [
+      "payouts-instant"
+    ]
+  },
+  {
+    "id": "q17",
+    "question": "What is the largest amount allowed for one instant payout?",
+    "answerable": true,
+    "expected_facts": [
+      "$10,000"
+    ],
+    "gold_doc_ids": [
+      "payouts-instant"
+    ]
+  },
+  {
+    "id": "q18",
+    "question": "How many read requests per second does the API allow in live mode?",
+    "answerable": true,
+    "expected_facts": [
+      "100 read requests per second"
+    ],
+    "gold_doc_ids": [
+      "api-rate-limits"
+    ]
+  },
+  {
+    "id": "q19",
+    "question": "What HTTP status code does the API return when I exceed a rate limit?",
+    "answerable": true,
+    "expected_facts": [
+      "429"
+    ],
+    "gold_doc_ids": [
+      "api-rate-limits"
+    ]
+  },
+  {
+    "id": "q20",
+    "question": "What is the rate limit in test mode?",
+    "answerable": true,
+    "expected_facts": [
+      "25 requests per second"
+    ],
+    "gold_doc_ids": [
+      "api-rate-limits"
+    ]
+  },
+  {
+    "id": "q21",
+    "question": "What prefix do live secret keys start with?",
+    "answerable": true,
+    "expected_facts": [
+      "sk_live_"
+    ],
+    "gold_doc_ids": [
+      "api-authentication"
+    ]
+  },
+  {
+    "id": "q22",
+    "question": "How long does the old key stay valid after I roll a secret key?",
+    "answerable": true,
+    "expected_facts": [
+      "12 hours"
+    ],
+    "gold_doc_ids": [
+      "api-authentication"
+    ]
+  },
+  {
+    "id": "q23",
+    "question": "How long does Acme store the result for an idempotency key?",
+    "answerable": true,
+    "expected_facts": [
+      "24 hours"
+    ],
+    "gold_doc_ids": [
+      "api-idempotency"
+    ]
+  },
+  {
+    "id": "q24",
+    "question": "What is the maximum length of an idempotency key?",
+    "answerable": true,
+    "expected_facts": [
+      "255 characters"
+    ],
+    "gold_doc_ids": [
+      "api-idempotency"
+    ]
+  },
+  {
+    "id": "q25",
+    "question": "What is the default page size for list endpoints?",
+    "answerable": true,
+    "expected_facts": [
+      "10 objects"
+    ],
+    "gold_doc_ids": [
+      "api-pagination"
+    ]
+  },
+  {
+    "id": "q26",
+    "question": "How many webhook endpoints can one account register?",
+    "answerable": true,
+    "expected_facts": [
+      "16 webhook endpoints"
+    ],
+    "gold_doc_ids": [
+      "api-webhooks"
+    ]
+  },
+  {
+    "id": "q27",
+    "question": "For how long does Acme retry a failed webhook delivery?",
+    "answerable": true,
+    "expected_facts": [
+      "3 days"
+    ],
+    "gold_doc_ids": [
+      "api-webhooks"
+    ]
+  },
+  {
+    "id": "q28",
+    "question": "How long does Acme support each API version?",
+    "answerable": true,
+    "expected_facts": [
+      "24 months"
+    ],
+    "gold_doc_ids": [
+      "api-versioning"
+    ]
+  },
+  {
+    "id": "q29",
+    "question": "What does a 402 status code mean?",
+    "answerable": true,
+    "expected_facts": [
+      "payment failed"
+    ],
+    "gold_doc_ids": [
+      "api-errors"
+    ]
+  },
+  {
+    "id": "q30",
+    "question": "In how many currencies can Acme charge customers?",
+    "answerable": true,
+    "expected_facts": [
+      "42 currencies"
+    ],
+    "gold_doc_ids": [
+      "faq-currencies",
+      "overview"
+    ]
+  },
+  {
+    "id": "q31",
+    "question": "What is the minimum TLS version for API traffic?",
+    "answerable": true,
+    "expected_facts": [
+      "TLS 1.2"
+    ],
+    "gold_doc_ids": [
+      "faq-security"
+    ]
+  },
+  {
+    "id": "q32",
+    "question": "How long is the longest free trial for a subscription?",
+    "answerable": true,
+    "expected_facts": [
+      "60 days"
+    ],
+    "gold_doc_ids": [
+      "subscriptions"
+    ]
+  },
+  {
+    "id": "q33",
+    "question": "How often does Smart Retries try a failed recurring payment?",
+    "answerable": true,
+    "expected_facts": [
+      "4 times",
+      "2 weeks"
+    ],
+    "gold_doc_ids": [
+      "subscriptions"
+    ]
+  },
+  {
+    "id": "q34",
+    "question": "How much does Shield Advanced cost?",
+    "answerable": true,
+    "expected_facts": [
+      "$0.05 per screened transaction"
+    ],
+    "gold_doc_ids": [
+      "fraud-protection"
+    ]
+  },
+  {
+    "id": "q35",
+    "question": "Which accounts get phone support?",
+    "answerable": true,
+    "expected_facts": [
+      "Enterprise accounts only"
+    ],
+    "gold_doc_ids": [
+      "support"
+    ]
+  },
+  {
+    "id": "u01",
+    "question": "Does Acme Payments support cryptocurrency payouts?",
+    "answerable": false,
+    "expected_facts": [],
+    "gold_doc_ids": []
+  },
+  {
+    "id": "u02",
+    "question": "What is the phone number of the Acme office in Berlin?",
+    "answerable": false,
+    "expected_facts": [],
+    "gold_doc_ids": []
+  },
+  {
+    "id": "u03",
+    "question": "What was the annual revenue of Acme Payments in 2023?",
+    "answerable": false,
+    "expected_facts": [],
+    "gold_doc_ids": []
+  },
+  {
+    "id": "u04",
+    "question": "Does Acme offer business loans to merchants?",
+    "answerable": false,
+    "expected_facts": [],
+    "gold_doc_ids": []
+  },
+  {
+    "id": "u05",
+    "question": "Does Acme integrate natively with Shopify?",
+    "answerable": false,
+    "expected_facts": [],
+    "gold_doc_ids": []
+  }
+]

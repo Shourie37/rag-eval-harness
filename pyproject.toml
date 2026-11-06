@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-eval-harness"
+version = "0.1.0"
+description = "Retrieval-augmented generation with an evaluation harness for correctness, grounding, and refusals."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Shourie Amireddy", email = "shourie3009@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+anthropic = ["anthropic"]
+bedrock = ["boto3"]
+dev = ["pytest>=8", "ruff"]
+
+[tool.setuptools]
+packages = ["rageval"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

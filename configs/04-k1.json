@@ -1,0 +1,7 @@
+{
+  "name": "04-k1",
+  "description": "BM25 over 120-word chunks, top 1. Cheapest prompt.",
+  "chunking": {"size": 120, "overlap": 30},
+  "retrieval": {"mode": "bm25", "k": 1},
+  "generator": {"type": "mock"}
+}

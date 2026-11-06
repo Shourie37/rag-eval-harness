@@ -1,0 +1,7 @@
+{
+  "name": "03-hybrid-rerank",
+  "description": "BM25 plus hashing vectors (alpha 0.5), reranked, top 4.",
+  "chunking": {"size": 120, "overlap": 30},
+  "retrieval": {"mode": "hybrid", "k": 4, "rerank": true, "hybrid_alpha": 0.5},
+  "generator": {"type": "mock"}
+}

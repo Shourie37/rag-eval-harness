@@ -1,0 +1,7 @@
+{
+  "name": "02-small-chunks",
+  "description": "BM25 over 30-word chunks, top 4. Tests whether facts survive tight chunk boundaries.",
+  "chunking": {"size": 30, "overlap": 5},
+  "retrieval": {"mode": "bm25", "k": 4},
+  "generator": {"type": "mock"}
+}

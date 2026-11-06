@@ -1,0 +1,8 @@
+{
+  "name": "claude-sonnet",
+  "description": "Baseline retrieval with Claude Sonnet 5.5 as the generator and the judge. Needs ANTHROPIC_API_KEY.",
+  "chunking": {"size": 120, "overlap": 30},
+  "retrieval": {"mode": "bm25", "k": 4},
+  "generator": {"type": "claude", "model": "claude-sonnet-5-5"},
+  "judge": {"type": "claude", "model": "claude-sonnet-5-5"}
+}
